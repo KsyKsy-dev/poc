@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: normal;
+  color: inherit;
+  text-transform: none;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize !important;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+:root {
+  --c1: rgba(79, 126, 255, 100); /* text */
+  --c2: rgba(71, 85, 186, 100); /* chapter */
+  --c3: rgba(47, 128, 237, 1); /* link */
+  --c4: rgba(85, 150, 236, 1); /* error,attention */
+  --c5: rgba(240, 240, 240, 1); /* white */
+}
+
+.c1 {
+  color: var(--c1);
+}
+.c2 {
+  color: var(--c2);
+}
+.c3 {
+  color: var(--c3);
+}
+.c4 {
+  color: var(--c4);
+}
+.c5 {
+  color: var(--c5);
+}
+
+.b1 {
+  background: var(--c1);
+}
+.b2 {
+  background: var(--c2);
+}
+.b3 {
+  background: var(--c3);
+}
+.b4 {
+  background: var(--c4);
+}
+.b5 {
+  background: var(--c5);
+}
+
+button,
+select {
+  border: none;
+  all: initial;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 16px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+main {
+  min-height: 100%;
+  flex: 1 1 auto;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+/*
+Ограничение ширины рабочей страницы для header,main,footer
+*/
+.wrapp {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.BIG {
+  font-weight: 600;
+  color: var(--c2);
+}
+
+p,
+ul,
+li,
+span,
+input,
+button.small,
+option,
+select,
+button,
+.small {
+  font-weight: 400;
+}
+
+a:hover,
+a:active {
+  color: var(--c3);
+}
+
+section {
+  border-bottom: 1px solid var(--c8);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
