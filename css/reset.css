@@ -1,4 +1,5 @@
-* {
+*,
+body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -8,19 +9,25 @@
   text-transform: none;
   list-style: none;
   text-decoration: none;
-  text-transform: capitalize !important;
-  font-family: "Poppins", sans-serif;
+  text-transform: none;
+  font-family: "Lato", sans-serif;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
 }
+body {
+  padding: 0 !important;
+  gap: 0 !important;
+}
 
 :root {
-  --c1: rgba(79, 126, 255, 100); /* text */
-  --c2: rgba(71, 85, 186, 100); /* chapter */
-  --c3: rgba(47, 128, 237, 1); /* link */
-  --c4: rgba(85, 150, 236, 1); /* error,attention */
-  --c5: rgba(240, 240, 240, 1); /* white */
+  --c1: rgba(79, 126, 255, 100); /* main */
+  --c2: rgba(71, 85, 186, 100); /* main2 */
+  --c3: rgb(231, 246, 44); /* yellow */
+  --c4: rgba(85, 150, 236, 1);
+  --c4_blue_light: rgb(206, 219, 255);
+  --c5: rgb(255, 255, 255); /* white */
+  --c6: rgb(52, 52, 52); /* dark gray */
 }
 
 .c1 {
@@ -38,21 +45,36 @@
 .c5 {
   color: var(--c5);
 }
+.c6 {
+  color: var(--c6);
+}
 
-.b1 {
+.bg1 {
   background: var(--c1);
 }
-.b2 {
+.bg2 {
   background: var(--c2);
 }
-.b3 {
+.bg3 {
   background: var(--c3);
 }
-.b4 {
+.bg4_blue_light {
+  background: var(--c4_blue_light);
+}
+.bg4 {
   background: var(--c4);
 }
-.b5 {
+.bg5 {
   background: var(--c5);
+}
+.b_b_c2 {
+  border-bottom: 1px solid var(--c2);
+}
+.b2 {
+  border: 1px solid var(--c2);
+}
+.b3 {
+  border: 1px solid var(--c3);
 }
 
 button,
@@ -112,6 +134,7 @@ h6,
 .BIG {
   font-weight: 600;
   color: var(--c2);
+  margin: 0;
 }
 
 p,
@@ -125,6 +148,7 @@ select,
 button,
 .small {
   font-weight: 400;
+  margin: 0;
 }
 
 a:hover,

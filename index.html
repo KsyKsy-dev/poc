@@ -3,34 +3,408 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="accets/Logo_PoC_Canvas.png" />
+    <link rel="icon" type="image/svg" href="accets/Logo_PoC_Canvas.webp" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="header_in f f_f _b_c2 _br16">
-        <div class="logo">
-          <a href=""
-            ><img width="100px" src="accets/Logo_PoC_Canvas.jpg" alt=""
-          /></a>
+      <div class="wrapp header header_in">
+        <div class="header__box pad16r pad16l f f_f _b_c2 _br16 fac">
+          <div class="logo">
+            <a href="#" class="f"
+              ><img
+                class="logo__img"
+                src="accets/Logo_PoC_Canvas.webp"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="nav c1 w pad74r N940">
+            <nav>
+              <ul class="nav__wrap f _f gap3ps">
+                <a href="#hero"><li class="nav__item fs16">PoC Canvas</li></a>
+                <a href="#comunity"
+                  ><li class="nav__item fs16">Our Community Speaks</li></a
+                >
+                <a href="#team"><li class="nav__item fs16">PoC Ideators</li></a>
+                <a href="#library"
+                  ><li class="nav__item fs16">PoC Library</li></a
+                >
+                <a href="#contacts"><li class="nav__item fs16">Contacts</li></a>
+              </ul>
+            </nav>
+          </div>
+          <div class="login N940"></div>
+          <div class="burger_icon f fc f_f" onclick="burgerOpen()">
+            <div class="burger_icon__line"></div>
+            <div class="burger_icon__line"></div>
+            <div class="burger_icon__line"></div>
+          </div>
         </div>
-        <div class="nav c1">
-          <nav>
-            <ul class="nav_wrap f gap16">
-              <a href=""><li class="nav_item">PoC Canvas</li></a>
-              <a href=""><li class="nav_item">Our Community Speaks</li></a>
-              <a href=""><li class="nav_item">PoC Ideators</li></a>
-              <a href=""><li class="nav_item">PoC Library</li></a>
-              <a href=""><li class="nav_item">Contacts</li></a>
+        <div class="burger__menu f fc w">
+          <div class="burger_close" onclick="burgerClose()">
+            <div class="_1 burger_line"></div>
+            <div class="_2 burger_line"></div>
+          </div>
+          <nav class="burger__menu__nav w pad74">
+            <ul class="f fc gap10 f_f">
+              <a href="#hero_b"
+                ><li class="nav__item b_b_c2 pad10l fs16">PoC Canvas</li></a
+              >
+              <a href="#community_b"
+                ><li class="nav__item b_b_c2 pad4b fs16 pad10l">
+                  Our Community Speaks
+                </li></a
+              >
+              <a href="#team_b"
+                ><li class="nav__item b_b_c2 pad10l pad4bfs16">
+                  PoC Ideators
+                </li></a
+              >
+              <a href="#library_b"
+                ><li class="nav__item b_b_c2 pad10l pad4b fs16">
+                  PoC Library
+                </li></a
+              >
+              <a href="#contacts_b"
+                ><li class="nav__item b_b_c2 pad10l pad4b fs16">Contacts</li></a
+              >
             </ul>
           </nav>
         </div>
-        <div class="login"></div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="hero">
+        <div id="hero"></div>
+        <div id="hero_m"></div>
+
+        <div class="hero_box wrapp">
+          <div class="hero_img_box">
+            <div class="hero_img_wrap pad16l pad16r">
+              <img src="accets/hero.png" alt="hero" class="hero_img" />
+              <img
+                src="accets/hero_mobile.webp"
+                alt="hero"
+                class="hero_img_mobile"
+              />
+            </div>
+            <div class="hero_content bg1 pad4ps _br16 f fc gap4">
+              <h1 class="c5">PoC Canvas</h1>
+              <p class="c5 hero_p">
+                Transform a blurry idea <br />into a real-life application
+              </p>
+              <a href="#contacts_hero"
+                ><div
+                  class="btn_main btn f bg3 _br16 b2 pad3ps pad16l pad16r f_f"
+                >
+                  <img src="accets/Group 52.svg" alt="" />
+                  <p class="c2 T hero_btn">CONTACT US!</p>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s1">
+        <div class="s1_box pad16 pad40 wrapp">
+          <h3 class="c2">
+            _ YOUR POC GUIDE: IDEATE, PROVE VALUE, BUILD SUCCESS
+          </h3>
+          <div class="s1_content f pad20 gap40 fw">
+            <div class="s1_content_box pad4 f_200">
+              <div class="s1_title_box f gap16">
+                <div class="s1_title_icon_wrap">
+                  <img src="accets/s1_icon_1.svg" alt="" />
+                </div>
+                <div class="fw500 s1_tittle_text c2 fs20">
+                  Transform<br />
+                  Ideas into<br />
+                  Value
+                </div>
+              </div>
+              <p class="pad16t fs18 s1_p">
+                Prove concepts with market value, quit PoC projects without
+                financial loss, or meaningfully disprove concepts and avoid
+                further investing in failed ideas.
+              </p>
+            </div>
+            <div class="s1_content_box pad4 f_200">
+              <div class="s1_title_box f gap16">
+                <div class="s1_title_icon_wrap">
+                  <img src="accets/s1_icon_2.svg" alt="" />
+                </div>
+                <div class="s1_tittle_text fw500 c2 fs22">
+                  Master <br />
+                  PoC <br />
+                  Challenges
+                </div>
+              </div>
+              <p class="pad16t fs18 s1_p">
+                Prove concepts with market value, quit PoC projects without
+                financial loss, or meaningfully disprove concepts and avoid
+                further investing in failed ideas.
+              </p>
+            </div>
+            <div class="s1_content_box pad4 f_200">
+              <div class="s1_title_box f gap16">
+                <div class="s1_title_icon_wrap">
+                  <img src="accets/s1_icon_3.svg" alt="" />
+                </div>
+                <div class="s1_tittle_text c2 fw500 fs22">
+                  Boost Your <br />
+                  Innovation <br />
+                  Success Rate
+                </div>
+              </div>
+              <p class="pad16t fs18 s1_p">
+                Stop wasting time and money on no-market concepts and focus on
+                value-driven innovation instead of proving for the sake of it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s2 bg1">
+        <div class="s2_box wrapp pad40">
+          <h3 class="c3 pad40b">_ ABOUT POC CANVAS</h3>
+
+          <div class="s2_content_box f fw pad20 gap30">
+            <div class="s2_img_box f_440 w50 f fac _f_">
+              <img class="s2_img" src="accets/s2.webp" alt="" />
+            </div>
+            <div class="s2_content f f_440 w50 fc _f_f_ fac gap20">
+              <div class="s2_icon"><img src="accets/s2_icon.svg" alt="" /></div>
+              <p class="s2_p c5 fs18 pad20">
+                The first time-and resource-bounded tool to navigate PoC
+                projects. PoC Canavs is born from years of high-tech field
+                research and practice by WEsion, a visionary academic spin-off.
+                With a proven track record, it's implemented by leading tech
+                organizations, universities, and startups.
+              </p>
+              <a href="#contacts_s2"
+                ><div
+                  class="btn_main btn f bg3 _br16 b2 pad3ps pad16l pad16r f_f"
+                >
+                  <img
+                    width="100px"
+                    src="accets/Group 52.svg"
+                    alt=""
+                    class="s2_arrow pad10r"
+                  />
+                  <p class="c2 s2_btn_p T">CONTACT US!</p>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s3">
+        <div class="s3_box wrapp pad40">
+          <h3 class="c1 pad40b">_ OUR COMMUNITY SPEAKS</h3>
+          <p class="pad40b">
+            We are happy to collaborate with startups and world leaders,
+            researchers, and practitioners on PoC Canvas.
+          </p>
+
+          <!-- <div class="s3_content f gap30">
+            <div class="s3_review">
+              <div class="s3_box1 _br16"></div>
+              <div class="s3_box2 _br16 f fac fc gap20 b2 pad20">
+                <div class="s3_arrow_wrap">
+                  <img src="accets/s3_arrow.svg" alt="" />
+                </div>
+                <div class="s3_stars bg2 c3 _br16 pad10l pad10r">* * *</div>
+                <div class="s3_comment c1 pad40b">
+                  I've seen PoC Canvas revolutionize startup validation for
+                  large organizations and corporations. It's the roadmap every
+                  entrepreneur needs to turn ideas into reality, fast-tracking
+                  success.
+                </div>
+                <div class="s3_name c2">Nitin Narkhede</div>
+                <div class="s3_role c1 fs16">
+                  Director of the Center of Entrepreneurship and Innovation
+                  (CREA UniCA)
+                </div>
+              </div>
+            </div>
+            <div class="s3_review">
+              <div class="s3_box1 _br16"></div>
+              <div class="s3_box2 _br16 f fac fc gap20 b2 pad20">
+                <div class="s3_arrow_wrap">
+                  <img src="accets/s3_arrow.svg" alt="" />
+                </div>
+                <div class="s3_stars bg2 c3 _br16 pad10l pad10r">* * *</div>
+                <div class="s3_comment c1 pad40b">
+                  I've seen PoC Canvas revolutionize startup validation for
+                  large organizations and corporations. It's the roadmap every
+                  entrepreneur needs to turn ideas into reality, fast-tracking
+                  success.
+                </div>
+                <div class="s3_name c2">Nitin Narkhede</div>
+                <div class="s3_role c1 fs16">
+                  Director of the Center of Entrepreneurship and Innovation
+                  (CREA UniCA)
+                </div>
+              </div>
+            </div>
+            <div class="s3_review">
+              <div class="s3_box1 _br16"></div>
+              <div class="s3_box2 _br16 f fac fc gap20 b2 pad20">
+                <div class="s3_arrow_wrap">
+                  <img src="accets/s3_arrow.svg" alt="" />
+                </div>
+                <div class="s3_stars bg2 c3 _br16 pad10l pad10r">* * *</div>
+                <div class="s3_comment c1 pad40b">
+                  I've seen PoC Canvas revolutionize startup validation for
+                  large organizations and corporations. It's the roadmap every
+                  entrepreneur needs to turn ideas into reality, fast-tracking
+                  success.
+                </div>
+                <div class="s3_name c2">Nitin Narkhede</div>
+                <div class="s3_role c1 fs16">
+                  Director of the Center of Entrepreneurship and Innovation
+                  (CREA UniCA)
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="s4">
+        <div id="team"></div>
+        <div id="team_b"></div>
+        <div class="s4_box wrapp pad40">
+          <h3 class="c1 pad40b">_ MEET POC IDEATORS</h3>
+          <p class="pad40b">
+            We are happy to collaborate with startups and world leaders,
+            researchers, and practitioners on PoC Canvas
+          </p>
+          <div class="s4_content pad40 fw f gap40">
+            <div class="s4_content_box f_200">
+              <div class="s4_img_box">
+                <img src="accets/s4_1.webp" alt="" class="s4_img" />
+              </div>
+              <div class="s4_name c1 fs40 fw800">Maryia <br />Zaitsava</div>
+              <div class="s4_link_box f">
+                <a
+                  href="https://www.linkedin.com/in/maryia-zaitsava-54500652 "
+                  class="f"
+                  target="_blank"
+                  ><div class="s4_patner bg2 c3">Parthner</div>
+                  <div class="s4_arrow">
+                    <img
+                      src="accets/arrow_right-big.webp"
+                      alt=""
+                      class="s4_arrow"
+                    /></div
+                ></a>
+              </div>
+            </div>
+            <div class="s4_content_box f_200">
+              <div class="s4_img_box">
+                <img src="accets/s4_2.png" alt="" class="s4_img" />
+              </div>
+              <div class="s4_name c1 fs40 fw800">
+                Maria Chiara <br />Di Guardo
+              </div>
+              <div class="s4_link_box f">
+                <a
+                  href="https://www.linkedin.com/in/maria-chiara-di-guardo-3b21159  "
+                  class="f"
+                  target="_blank"
+                  ><div class="s4_patner bg2 c3">Parthner</div>
+                  <div class="s4_arrow">
+                    <img
+                      src="accets/arrow_right-big.webp"
+                      alt=""
+                      class="s4_arrow"
+                    /></div
+                ></a>
+              </div>
+            </div>
+            <div class="s4_content_box f_200">
+              <div class="s4_img_box">
+                <img src="accets/s4_3.png" alt="" class="s4_img" />
+              </div>
+              <div class="s4_name c1 fs40 fw800">
+                Elona<br />
+                Marku
+              </div>
+              <div class="s4_link_box f">
+                <a
+                  href="https://www.linkedin.com/in/elona-marku-887682a7"
+                  class="f"
+                  target="_blank"
+                  ><div class="s4_patner bg2 c3">Parthner</div>
+                  <div class="s4_arrow">
+                    <img
+                      src="accets/arrow_right-big.webp"
+                      alt=""
+                      class="s4_arrow"
+                    /></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s5">
+        <div id="contacts"></div>
+        <div id="contacts_b"></div>
+        <div id="contacts_hero"></div>
+        <div id="contacts_s2"></div>
+        <div class="s5_wrap wrapp pad20">
+          <h3 class="c2 pad20b">_ LET’S INNOVATE TOGRTHER</h3>
+          <h5 class="c5 pad20b">We would love to hear from you</h5>
+          <div class="s5_box f pad40 fw">
+            <div class="s5_title_box f fac fc f_400">
+              <div class="s5_title c2 fw900 fs40 pad40t pad40b">
+                DROP US <br />
+                A LINE <span class="s5_marc fw900 fs60">!</span>
+              </div>
+              <div class="s5_circle_box">
+                <div class="s5_circle s5_c1 bg2"></div>
+                <div class="s5_circle s5_c2"></div>
+                <div class="s5_circle s5_c3"></div>
+                <div class="s5_circle s5_c4 b2"></div>
+              </div>
+            </div>
+            <div class="s5_CF_box f_400"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg1 fs16">
+      <div class="footer-box wrapp pad40">
+        <div class="footer_logo_box bg5 pad4 f br4">
+          <img width="90px" src="accets/Logo_PoC_Canvas.webp" alt="" />
+        </div>
+        <div class="footer_content pad40 f fw gap40">
+          <div class="footer_item f_200">
+            <p>
+              <a href="mailto:innovate@poc-canvas.com"
+                >innovate@poc-canvas.com</a
+              >
+            </p>
+          </div>
+          <div class="footer_item f_100">
+            <div class="inwision_logo_box bg3 pad4 f fac fc">
+              <img width="90px" src="accets/Logo WEsion.webp" alt="" />
+            </div>
+          </div>
+          <div class="footer_item f_200">
+            WEsion SRL Società Benefit is an academic spin-off committed to open
+            innovation, enhanced by the deep interplay of research and
+            technology.
+          </div>
+          <div class="footer_item f_200"><a href="">Privacy Policy</a></div>
+        </div>
+        <p>© All Copyrights 2024 by WEsion SRL Società Benefit</p>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

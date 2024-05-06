@@ -1,0 +1,14 @@
+footer {
+  color: #cedbfe;
+}
+.footer_logo_box {
+  width: 100px;
+}
+.inwision_logo_box {
+  width: 120px;
+}
+.footer_item_link a:visited,
+.footer_item_link a:active,
+.footer_item_link a {
+  color: #cedbfe;
+}
